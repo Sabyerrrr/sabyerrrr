@@ -1,0 +1,180 @@
+/* Reset any default body margin/padding */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    text-align: left;
+}
+
+/* Header styling */
+header {
+    background-color: #c4b9d9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+header h1 {
+    margin: 0;
+    color: #4a4a4a;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #4a4a4a;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 0; /* Remove margin to prevent gaps */
+}
+
+.portfolio-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.portfolio-section p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    gap: 20px; /* Adjust the space between items */
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.portfolio-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    text-align: center;
+}
+
+.portfolio-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.portfolio-image {
+    width: 100%;  /* Ensure the image takes up the full width */
+    height: 500px;  /* Increase height for a larger image */
+    object-fit: contain;  /* Prevent cropping */
+}
+
+
+
+.portfolio-card h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+
+/* Section for the background image and description */
+.image-description-section {
+    background-image: url('images/cool-background.png'); /* Add the path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    background-attachment: fixed;
+    margin: 0; /* Remove margin */
+}
+
+.image-description-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.image-description-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Remove gaps around the intro section */
+.intro-section {
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+}
+
+/* Specific adjustments to avoid gaps between header and body */
+main {
+    margin-top: 0; /* Ensure no margin between header and main content */
+}
+
+/* Ensure container elements are full width */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+    flex-direction: column;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: 0; /* Remove gap on the right side */
+}
+
+.portfolio-list button {
+    display: block;
+    width: 150px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.image {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin-left: 250px;
+}
+
+.image img {
+    width: 200px;
+    height: auto;
+}
+
+body {
+    background-image: url('images/bg.jpg'); /* Add your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
